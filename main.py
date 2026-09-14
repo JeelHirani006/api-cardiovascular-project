@@ -4,10 +4,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # your Vite dev server
+    allow_origins=["https://frontend-cardiovascular-ml-project.vercel.app/"], 
     allow_methods=["POST", "GET"],
     allow_headers=["*"],
 )
