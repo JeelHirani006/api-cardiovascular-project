@@ -6,7 +6,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://frontend-cardiovascular-ml-project.vercel.app"], 
+    allow_origins=["*"], 
     allow_methods=["POST", "GET"],
     allow_headers=["*"],
 )
