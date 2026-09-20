@@ -11,7 +11,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = joblib.load("model/model.pkl")
+model = joblib.load("model/model1.pkl")
 
 @app.get("/")
 def home():
